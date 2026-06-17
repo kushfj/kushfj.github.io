@@ -1,0 +1,111 @@
+baseURL: 'https://kush.com.fj/'
+locale: 'en-us'
+title: 'Kush, Nishchal'
+
+theme: 'beautifulhugo'
+googleAnalytics: 'G-BS5B7C596Z'
+
+# https://gohugo.io/configuration/all/
+buildFuture: true
+cleanDestinationDir: true
+copyright: 'All rights reserved &copy; 2026 - Nishchal Kush'
+disableHugoGeneratorInject: true
+enableGitInfo: true
+enableEmoji: true
+enableRobotsTXT: true
+environment: 'production'
+removePathAccents: true
+
+# https://gohugo.io/configuration/menus/
+menus:
+  main:
+  - name: Home
+    pageRef: /
+    weight: 10
+  - name: Blog
+    pageRef: /posts
+    weight: 20
+  - name: Tags
+    pageRef: /tags
+    weight: 30
+  - name: Contact
+    pageRef: /contact
+    weight: 40
+  - name: About
+    pageRef: /about
+    weight: 50
+
+# https://gohugo.io/configuration/minify/
+minify:
+  minifyOutput: true
+
+#
+outputs:
+  home:
+  - html
+  - rss
+  - json
+  single:
+  - html
+  - rss
+  - json
+
+# https://gohugo.io/configuration/permalinks/
+permalinks:
+  page:
+    posts: /blog/:year/:month/:slug/
+
+# https://gohugo.io/configuration/sitemap/
+sitemap:
+  changeFreq: 'weekly'
+  priority: 0.5
+
+# since we had migrated from GoogleBlogger we have some raw HTML in the markdown, suppress errors and allows these to render 
+# --- WARNING: only since we control the source code ---
+ignoreLogs: ['warning-goldmark-raw-html']
+#[markup]
+#    [markup.goldmark]
+#        [markup.goldmark.renderer]
+#            hardWraps: false
+#            unsafe: true
+#            xhtml: false
+
+#
+# Beautiful Hugo configuration
+# https://halogenica.net/beautifulhugo/page/configuration/
+#
+
+Params:
+  # core settings
+  favicon: '/static/favicon.ico'
+  mainSections: ["main"]
+  since: 2005
+
+  # content display settings
+  readingTime: true
+  hideAuthor: true
+  socialShare: true
+  showRelatedPosts: true
+
+  # syntax highlighting settings
+  useHLJS: true
+  rss: true
+   
+  # author settings 
+  author:
+    name: 'Kush, Nishchal'
+    website: 'https://kush.com.fj'
+    email: 'kush (at) kush.com.fj'
+    bluesky: 'nkush.bsky.social'
+    github: 'kushfj'
+    #instagram: 'kushfj'
+    keybase: 'kush'
+    linkedin: 'nkush'
+    #reddit: 'kushfj'
+  
+  search:
+    provide: 'fuse'
+
+services:
+  googleAnalytics:
+    ID: G-BS5B7C596Z
