@@ -1,11 +1,8 @@
-#
 # hugo.yml for GitHub Action to built and deploy Hugo to GitHub Pages
-#
 name: GitHub Action to Built and Deploy Hugo to GitHub Pages
   # Runs on pushes targeting the default branch
   push:
-    branches: 
-      - main
+    branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
