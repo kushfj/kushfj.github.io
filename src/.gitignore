@@ -1,5 +1,9 @@
-_site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
+.hugo_build.lock
+archetypes/
+assets/
+data/
+hugo_stats.json
+layouts/
+public/
+resources/
+themes/
