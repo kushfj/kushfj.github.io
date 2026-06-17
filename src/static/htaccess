@@ -1,0 +1,41 @@
+#Options All -Indexes
+
+RewriteEngine On
+
+# Attempt to cloak add-on domains 
+#RewriteCond %{HTTP_HOST} ^(www\.)?pen-test\.tk$ [OR]
+RewriteCond %{HTTP_HOST} ^(www\.)?packwolf\.com\.au$ [OR]
+RewriteCond %{HTTP_HOST} ^(www\.)?packwolf\.net\.au$
+RewriteRule ^.*$ '-' [L]
+
+# Redirect aliased domains to kush.com.fj, including URLs with preceeding wwwww
+#RewriteCond %{HTTP_HOST} ^www.kush.id.au [NC,OR]
+#RewriteCond %{HTTP_HOST} ^kush.id.au [NC,OR]
+#RewriteCond %{HTTP_HOST} ^www.kush.net.au [NC,OR]
+#RewriteCond %{HTTP_HOST} ^kush.net.au [NC,OR]
+#RewriteCond %{HTTP_HOST} ^www.kush.net.nz [NC,OR]
+#RewriteCond %{HTTP_HOST} ^kush.net.nz [NC,OR]
+#RewriteCond %{HTTP_HOST} ^www.kush.com.fj [NC,OR]
+#RewriteCond %{HTTP_HOST} ^kush.com.fj [NC,OR]
+#RewriteCond %{HTTP_HOST} ^www.sexyglob.com [NC,OR]
+#RewriteCond %{HTTP_HOST} ^sexyglob.com [NC,OR]
+#RewriteCond %{HTTP_HOST} ^www.securingscada.info [NC,OR]
+#RewriteCond %{HTTP_HOST} ^securingscada.info [NC,OR]
+#RewriteCond %{HTTP_HOST} ^(www\.)?sexyglob\.com$ [OR]
+#RewriteCond %{HTTP_HOST} ^(www\.)?securingscada\.info$ [OR]
+RewriteCond %{HTTP_HOST} ^(www\.)?kush\.id\.au$ [OR]
+RewriteCond %{HTTP_HOST} ^(www\.)?kush\.net\.nz$ [OR]
+RewriteCond %{HTTP_HOST} ^(www\.)?kush\.com\.fj$
+RewriteRule ^(.*)$ https://kush.com.fj/$1 [L,R=301,NC]
+
+# Relocate contactme.html to contact.html
+#Redirect 301 /contactme.html /contact.html
+#RewriteRule   ^contactme.html$   contact.html   [R=301,NC,L]
+
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+ErrorDocument 404 /404.php

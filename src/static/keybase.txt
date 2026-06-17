@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/kush
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://kush.com.fj
+  * I am kush (https://keybase.io/kush) on keybase.
+  * I have a public key ASDnyMf5Oqm3gLeoZ6emBth5DZJOm1Qnn73FxgYilDBSjwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120e7c8c7f93aa9b780b7a867a7a606d8790d924e9b54279fbdc5c606229430528f0a",
+      "host": "keybase.io",
+      "kid": "0120e7c8c7f93aa9b780b7a867a7a606d8790d924e9b54279fbdc5c606229430528f0a",
+      "uid": "aef45d923f3a2ad1042f0f422b2dc819",
+      "username": "kush"
+    },
+    "merkle_root": {
+      "ctime": 1647429630,
+      "hash": "e622b5a6b3f2c31ec634272b53b3bc6fc165823b84e51d9441e200953f33956e8b5c240d510de7bae4b7cc3c7c10a47aa87ce155fd795bf1c325b9c8c528e7de",
+      "hash_meta": "05b29465979409ad5496ac33e8cd9e9fe4a344863c1946d674e341c5454f4b86",
+      "seqno": 22094100
+    },
+    "service": {
+      "entropy": "Sd4uIvSt3hbJbfABaKd3c5bE",
+      "hostname": "kush.com.fj",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.9.0"
+  },
+  "ctime": 1647429688,
+  "expire_in": 504576000,
+  "prev": "1be340bbcf4559ed24b4a0b9f76f75dd2abac702415b8c9a1831dede5867443e",
+  "seqno": 59,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg58jH+Tqpt4C3qGenpgbYeQ2STptUJ5+9xcYGIpQwUo8Kp3BheWxvYWTESpcCO8QgG+NAu89FWe0ktKC592913Sq6xwJBW4yaGDHe3lhnRD7EIJIY/YCQ+jppM9WcA1G7fACKUD73TSgDHhS+3ZyEQ67rAgHCo3NpZ8RAo94fw3HqhnyXAWccgG43d4ZeDG3C6LD1FDadeop+eS5YG+nFRDKkG2+pGfTl3u43ZZrM35nrYg4voU/WyRvXA6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIMSzNNxcSg0pXV29hg3zauR2qlo678SF0RTUg2xqwfkzo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/kush
+
+==================================================================
