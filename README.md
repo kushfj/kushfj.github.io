@@ -15,7 +15,7 @@ Debian development environment is used for local development so instructions are
   * `git submodule add --depth=1 https://github.com/halogenica/beautifulhugo.git themes/beautifulhugo`
 * Modify the `config.yml` file
 ```bash
-sed -i 's/^languageCode:[[:space:]]*en-us/languageCode: en-au/' config.yml
+sed -i 's/^languageCode:[[:space:]]*en-us/locale: en-au/' config.yml
 sed -i 's/^baseURL:.*/baseURL: http:\/\/kush\.com\.fj\//' config.yml
 sed -i 's/^title:.*/title: 'Kush, Nishchal'/' config.yml
 sed -i -e '0,/^theme:/s/^theme:.*/theme: "beautifulhugo"/;t' \ 
@@ -35,7 +35,7 @@ Always create a new branch as we don't make changes to main/master. In the examp
     * `git add content/post/2025-01-03-version6.md`
     * `git commit content/post/2025-01-03-version6.md -m "initial version"`
   * Merge the new branch back into the main trunk
-    * `git checkout master`
+    * `git checkout main`
     * `git merge version6`
     * `git push`
 
@@ -63,3 +63,5 @@ Resolved by adding `theme: 'beautifulhugo` into `config.yml` file
 WARN 2026/06/11 15:12:53 Module "beautifulhugo" is not compatible with this Hugo version; run "hugo mod graph" for more information.
 Error: add site dependencies: load resources: loading templates: "/home/parallels/Documents/development/kushfj.github.io/src/themes/beautifulhugo/layouts/partials/seo/structured/recipe.html:71:1": parse failed: template: partials/seo/structured/recipe.html:71: unexpected <with> in else
 ```
+
+Resolved by upgrading HugoGo to latest version (version 0.163)
