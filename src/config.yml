@@ -23,7 +23,7 @@ menus:
     pageRef: /
     weight: 10
   - name: Blog
-    pageRef: /posts
+    pageRef: /post
     weight: 20
   - name: Tags
     pageRef: /tags
